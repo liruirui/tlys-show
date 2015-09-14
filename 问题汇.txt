@@ -1,0 +1,6 @@
+expert---->expert.html//keepHealth--->keepHealthCategory.html//studyClass---->studyList.html 导航栏小图标
+shoppingCart//organicHot---->comfirmOrder.html +-计数器
+关于signUp.html(keepHealth//studyClass//toningClass)  与UI还有出入
+mine--->goodsDetails.html//organicHot---->organicDetails.html   footer按钮图标
+more---->setUp.html  开关按钮太大啦
+health内没有界面

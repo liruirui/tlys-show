@@ -1,0 +1,70 @@
+<!doctype html>
+<html class="no-js" ng-app="toningClass">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/jquery.mobile.css"/>
+    <link rel="stylesheet" href="../../css/my-custom-theme.css"/>
+    <link rel="stylesheet" href="../../css/jquery.mobile.icons.min.css"/>
+    <link rel="stylesheet" href="../../css/main.css">
+</head>
+<body>
+
+<div data-role="page">
+    <div data-role="header">
+        <a data-role="button" data-rel="back" data-icon="carat-l" data-iconpos="notext" class="icon_left"></a>
+
+        <h1>调理班</h1>
+        <a href="search.html" data-role="button" data-icon="search" data-iconpos="notext" class="icon_right"></a>
+    </div>
+    <!--<a href="toningClassDetails.html">轮播图</a>-->
+    <div data-role="content" class="index-content">
+        <fieldset class="ui-grid-d" style="margin-left: 2%;">
+            <!--第一行-->
+            <div class="ui-block-a">
+                <img src="../../img/toningClass/bj.png"/>
+                <span class="font-s">北京</span>
+            </div>
+            <div class="ui-block-b">
+                <img src="../../img/toningClass/sh.png"/>
+                <span class="font-s">上海</span>
+            </div>
+            <div class="ui-block-c">
+                <img src="../../img/toningClass/gz.png"/>
+                <span class="font-s">广州</span>
+            </div>
+            <div class="ui-block-d">
+                <img src="../../img/toningClass/sz.png"/>
+                <span class="font-s">深圳</span>
+            </div>
+             <div class="ui-block-d">
+                <img src="../../img/toningClass/more.png"/>
+                <span class="font-s">更多</span>
+            </div>
+        </fieldset>
+    </div>
+
+    <div data-role="content">
+        <ul data-role="listview" ng-controller="toningClassCtrl">
+            <!--后续此处可能要添加过滤器-->
+            <li data-icon="false" ng-repeat="info in infos">
+                <a href="toningClassDetails.html">
+                    <img ng-src="{{info.playImage}}" class="listimg"/>
+                    <h2>{{info.playInfo}}</h2>
+                    <p class="font-s">{{info.playArea}}</p>
+                    <p class="font-s">{{info.playDate}}</p>
+                    <p class="ui-li-aside redtxt">{{info.playMoney}}</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--/首页-->
+
+<script src="../../js/jquery-1.11.3.min.js"></script>
+<script src="../../js/jquery.mobile.js"></script>
+<script src="../../js/angular.js"></script>
+<script src="../../js/toningClass/toningClassCtrl.js"></script>
+</body>
+</html>
