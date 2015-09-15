@@ -56,7 +56,7 @@
             focusClass: "ui-focus",
 
             // Automatically handle clicks and form submissions through Ajax, when same-domain
-            ajaxEnabled: false,
+            ajaxEnabled: true,
 
             // Automatically load and show pages based on location.hash
             hashListeningEnabled: true,

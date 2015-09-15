@@ -50,11 +50,11 @@
             <!--后续此处可能要添加过滤器-->
             <li data-icon="false" ng-repeat="info in infos">
                 <a href="toningClassDetails.html">
-                    <img ng-src="{{info.playImage}}" class="listimg"/>
-                    <h2>{{info.playInfo}}</h2>
-                    <p class="font-s">{{info.playArea}}</p>
-                    <p class="font-s">{{info.playDate}}</p>
-                    <p class="ui-li-aside redtxt">{{info.playMoney}}</p>
+                    <img ng-bind="info.playImage" class="listimg"/>
+                    <h2 ng-bind="info.playInfo"></h2>
+                    <p class="font-s" ng-bind="info.playArea"></p>
+                    <p class="font-s" ng-bind="info.playDate"></p>
+                    <p class="ui-li-aside redtxt" ng-bind="info.playMoney"></p>
                 </a>
             </li>
         </ul>
